@@ -9,7 +9,7 @@ import { ApiService } from '../api.service';
 })
 export class NameDetailComponent implements OnInit {
   constructor(private route: ActivatedRoute, private api: ApiService) {}
-  selected_name = [{ id: 0, firstname: '', lastname: '', dob: '' }];
+  selected_name = [];
 
   ngOnInit(): void {
     this.loadName();
